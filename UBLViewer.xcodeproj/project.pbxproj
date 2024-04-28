@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D781572BDE31C0003A0CE7 /* UBLViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781562BDE31C0003A0CE7 /* UBLViewerApp.swift */; };
+		18D781592BDE31C0003A0CE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781582BDE31C0003A0CE7 /* ContentView.swift */; };
+		18D7815B2BDE31C1003A0CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D7815A2BDE31C1003A0CE7 /* Assets.xcassets */; };
+		18D7815E2BDE31C1003A0CE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D7815D2BDE31C1003A0CE7 /* Preview Assets.xcassets */; };
+		18D781672BDE3231003A0CE7 /* TCPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781662BDE3231003A0CE7 /* TCPServer.swift */; };
+		18D781692BDE344F003A0CE7 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781682BDE344F003A0CE7 /* ServerManager.swift */; };
+		18D7816C2BDE915D003A0CE7 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7816B2BDE915D003A0CE7 /* MessageListView.swift */; };
+		18D7816E2BDE91A8003A0CE7 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7816D2BDE91A8003A0CE7 /* MessageListViewModel.swift */; };
+		18D781712BDE9226003A0CE7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781702BDE9226003A0CE7 /* ContentViewModel.swift */; };
+		18D781762BDE94EE003A0CE7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781752BDE94EE003A0CE7 /* Message.swift */; };
+		18D781792BDE9A34003A0CE7 /* MessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D781782BDE9A34003A0CE7 /* MessageItemView.swift */; };
+		18D7817B2BDE9A3D003A0CE7 /* MessageItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7817A2BDE9A3D003A0CE7 /* MessageItemViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18D781532BDE31C0003A0CE7 /* UBLViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBLViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D781562BDE31C0003A0CE7 /* UBLViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBLViewerApp.swift; sourceTree = "<group>"; };
+		18D781582BDE31C0003A0CE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18D7815A2BDE31C1003A0CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D7815D2BDE31C1003A0CE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18D7815F2BDE31C1003A0CE7 /* UBLViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UBLViewer.entitlements; sourceTree = "<group>"; };
+		18D781662BDE3231003A0CE7 /* TCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPServer.swift; sourceTree = "<group>"; };
+		18D781682BDE344F003A0CE7 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		18D7816B2BDE915D003A0CE7 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		18D7816D2BDE91A8003A0CE7 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
+		18D781702BDE9226003A0CE7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		18D781752BDE94EE003A0CE7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		18D781782BDE9A34003A0CE7 /* MessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItemView.swift; sourceTree = "<group>"; };
+		18D7817A2BDE9A3D003A0CE7 /* MessageItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItemViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D781502BDE31C0003A0CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D7814A2BDE31C0003A0CE7 = {
+			isa = PBXGroup;
+			children = (
+				18D781552BDE31C0003A0CE7 /* UBLViewer */,
+				18D781542BDE31C0003A0CE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18D781542BDE31C0003A0CE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D781532BDE31C0003A0CE7 /* UBLViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D781552BDE31C0003A0CE7 /* UBLViewer */ = {
+			isa = PBXGroup;
+			children = (
+				18D781772BDE9A1B003A0CE7 /* MessageItem */,
+				18D781722BDE948A003A0CE7 /* Message */,
+				18D7816A2BDE3675003A0CE7 /* MessageList */,
+				18D7816F2BDE9211003A0CE7 /* Content */,
+				18D781652BDE3218003A0CE7 /* Network */,
+				18D781562BDE31C0003A0CE7 /* UBLViewerApp.swift */,
+				18D7815A2BDE31C1003A0CE7 /* Assets.xcassets */,
+				18D7815F2BDE31C1003A0CE7 /* UBLViewer.entitlements */,
+				18D7815C2BDE31C1003A0CE7 /* Preview Content */,
+			);
+			path = UBLViewer;
+			sourceTree = "<group>";
+		};
+		18D7815C2BDE31C1003A0CE7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18D7815D2BDE31C1003A0CE7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18D781652BDE3218003A0CE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18D781662BDE3231003A0CE7 /* TCPServer.swift */,
+				18D781682BDE344F003A0CE7 /* ServerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		18D7816A2BDE3675003A0CE7 /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				18D7816B2BDE915D003A0CE7 /* MessageListView.swift */,
+				18D7816D2BDE91A8003A0CE7 /* MessageListViewModel.swift */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		18D7816F2BDE9211003A0CE7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				18D781582BDE31C0003A0CE7 /* ContentView.swift */,
+				18D781702BDE9226003A0CE7 /* ContentViewModel.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		18D781722BDE948A003A0CE7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				18D781752BDE94EE003A0CE7 /* Message.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18D781772BDE9A1B003A0CE7 /* MessageItem */ = {
+			isa = PBXGroup;
+			children = (
+				18D781782BDE9A34003A0CE7 /* MessageItemView.swift */,
+				18D7817A2BDE9A3D003A0CE7 /* MessageItemViewModel.swift */,
+			);
+			path = MessageItem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D781522BDE31C0003A0CE7 /* UBLViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D781622BDE31C1003A0CE7 /* Build configuration list for PBXNativeTarget "UBLViewer" */;
+			buildPhases = (
+				18D7814F2BDE31C0003A0CE7 /* Sources */,
+				18D781502BDE31C0003A0CE7 /* Frameworks */,
+				18D781512BDE31C0003A0CE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UBLViewer;
+			productName = UBLViewer;
+			productReference = 18D781532BDE31C0003A0CE7 /* UBLViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D7814B2BDE31C0003A0CE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					18D781522BDE31C0003A0CE7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 18D7814E2BDE31C0003A0CE7 /* Build configuration list for PBXProject "UBLViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D7814A2BDE31C0003A0CE7;
+			productRefGroup = 18D781542BDE31C0003A0CE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D781522BDE31C0003A0CE7 /* UBLViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D781512BDE31C0003A0CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D7815E2BDE31C1003A0CE7 /* Preview Assets.xcassets in Resources */,
+				18D7815B2BDE31C1003A0CE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D7814F2BDE31C0003A0CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D781692BDE344F003A0CE7 /* ServerManager.swift in Sources */,
+				18D781592BDE31C0003A0CE7 /* ContentView.swift in Sources */,
+				18D7816E2BDE91A8003A0CE7 /* MessageListViewModel.swift in Sources */,
+				18D781712BDE9226003A0CE7 /* ContentViewModel.swift in Sources */,
+				18D7816C2BDE915D003A0CE7 /* MessageListView.swift in Sources */,
+				18D781572BDE31C0003A0CE7 /* UBLViewerApp.swift in Sources */,
+				18D781672BDE3231003A0CE7 /* TCPServer.swift in Sources */,
+				18D7817B2BDE9A3D003A0CE7 /* MessageItemViewModel.swift in Sources */,
+				18D781792BDE9A34003A0CE7 /* MessageItemView.swift in Sources */,
+				18D781762BDE94EE003A0CE7 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18D781602BDE31C1003A0CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D781612BDE31C1003A0CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		18D781632BDE31C1003A0CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UBLViewer/UBLViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UBLViewer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakaostyle.UBLViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18D781642BDE31C1003A0CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UBLViewer/UBLViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UBLViewer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakaostyle.UBLViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D7814E2BDE31C0003A0CE7 /* Build configuration list for PBXProject "UBLViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D781602BDE31C1003A0CE7 /* Debug */,
+				18D781612BDE31C1003A0CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D781622BDE31C1003A0CE7 /* Build configuration list for PBXNativeTarget "UBLViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D781632BDE31C1003A0CE7 /* Debug */,
+				18D781642BDE31C1003A0CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D7814B2BDE31C0003A0CE7 /* Project object */;
+}
